@@ -20,11 +20,4 @@ public class MaximumNestingDepthOfTheParentheses {
         }
         return depth;
     }
-
-    
-    public static void main(String[] args) {
-        
-    }
-
-
 }
