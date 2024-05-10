@@ -3,6 +3,10 @@ import java.util.PriorityQueue;
 
 public class KthSmallestPrimeFraction {
 
+    // brute force is consider every pair and check and sort and then compare
+
+    // better is to use min heap
+
     static class Pair {
         int first;
         int second;
@@ -29,7 +33,7 @@ public class KthSmallestPrimeFraction {
             for(int j=i+1; j<arr.length; j++) {
                 int first = arr[i];
                 int second = arr[j];
-                double fraction = (double) (first*1.0/second);
+                double fraction = (double) first/second;
                 queue.offer(new Pair(first, second, fraction));
             }
         }
