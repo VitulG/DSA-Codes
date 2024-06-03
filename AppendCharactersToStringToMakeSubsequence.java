@@ -1,6 +1,10 @@
 public class AppendCharactersToStringToMakeSubsequence {
 
     public static int appendCharacter(String s, String t) {
+        if(s.equals(t)) {
+            return 0;
+        }
+        
         int len = s.length();
 
         int tlen = t.length();
