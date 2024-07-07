@@ -6,9 +6,7 @@ public class WaterBottles {
         while(numBottles >= numExchange) {
             int spend = numBottles / numExchange;
             int remaining = numBottles % numExchange;
-
             ans += spend;
-
             numBottles = remaining + spend;
         }
         return ans;
