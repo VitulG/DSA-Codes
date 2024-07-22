@@ -41,7 +41,7 @@ public class SortThePeople {
     }
 
     public static void main(String[] args) {
-        String[] names = sortPeople(new String[]{"Alice","Bob","Bob"}, new int[]{155,185,150});
+        String[] names = sortPeople(new String[]{"Vitul","Rahul","Aman"}, new int[]{164,180,160});
 
         for(String name : names) {
             System.out.print(name+" ");
