@@ -1,6 +1,6 @@
 public class MinimumSwapsRequiredToGroupAllOnesTogetherI {
     public static int minSwaps(int arr[], int n) {
-        // Complete the function
+       
         // first count the number of ones
 
         int totalNumberOfOnes = 0;
