@@ -39,7 +39,6 @@ public class StoneGameII {
                 Arrays.fill(row, -1);
             }
         }
-
         return stonesForAlice(piles, 0, 1, 1, piles.length, dp);
     }
 
