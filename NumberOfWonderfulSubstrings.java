@@ -42,7 +42,7 @@ public class NumberOfWonderfulSubstrings {
         if(word.isEmpty()) {
             return 0l;
         }
-        
+        return wonderfulSubstringsOptimally(word);
     }
 
     public static void main(String[] args) {
