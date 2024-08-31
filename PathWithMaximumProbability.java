@@ -2,7 +2,7 @@ import java.util.*;
 
 public class PathWithMaximumProbability {
 
-    static class Pair  implements Comparable<Pair>{
+    static class Pair implements Comparable<Pair>{
         double probability;
         int node;
 
