@@ -1,13 +1,18 @@
 public class MinimumBitFlipsToConvertNumber {
 
     public static int minBitFlips(int start, int goal) {
+        int answer = start ^ goal;
+        int temp = answer;
         int minBitFlips = 0;
+        int loopTill = 0;
 
-        for(int i=0; i<32; i++) {
-            int bitStart = (start >> i) & 1;
-            int bitGoal = (goal >> i) & 1;
+        while(temp != 0) {
+            loopTill+=1;
+            temp /= 2;
+        }
 
-            if(bitStart!=bitGoal) {
+        for(int i=0; i<loopTill; i++) {
+            if((answer&(1<<i)) != 0) {
                 minBitFlips++;
             }
         }
