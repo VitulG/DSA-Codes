@@ -1,6 +1,6 @@
 import java.util.*;
 
-class MyCalender {
+class MyCalendar {
 
     static class Event {
         int start;
@@ -12,7 +12,7 @@ class MyCalender {
     }
 
     private final TreeSet<Event> events;
-    public MyCalender() {
+    public MyCalendar() {
         events = new TreeSet<>((a,b) -> a.start - b.start);
     }
 
@@ -35,7 +35,7 @@ class MyCalender {
     }
 }
 
-public class MyCalenderI {
+public class MyCalendarI {
     public static void main(String[] args) {
 
     }
