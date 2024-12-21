@@ -28,7 +28,7 @@ public class CombinationSumII {
 
     public static List<List<Integer>> combinationSum2(int[] candidates, int target) {
         if(candidates.length == 0 || target < 1) {
-            return new ArrayList<List<Integer>>();
+            return new ArrayList<>();
         }
 
         Arrays.sort(candidates);

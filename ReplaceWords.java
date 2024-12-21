@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class ReplaceWords {
     static class TrieNode {
@@ -32,7 +33,7 @@ public class ReplaceWords {
 
     public static String searchWord(String word) {
         TrieNode curr = root;
-        StringBuilder shortWord = new StringBuilder("");
+        StringBuilder shortWord = new StringBuilder();
 
         for(char ch : word.toCharArray()) {
             if(curr.childrens[ch-'a'] == null) {
@@ -54,16 +55,11 @@ public class ReplaceWords {
         }
 
         String[] words = sentance.split(" ");
-        StringBuilder ans = new StringBuilder("");
+        StringBuilder ans = new StringBuilder();
 
         for(String word : words) {
             String foundWord = searchWord(word);
-
-            if(foundWord == null) {
-                ans.append(word);
-            }else{
-                ans.append(foundWord);
-            }
+            ans.append(Objects.requireNonNullElse(foundWord, word));
             ans.append(" ");
         }
         return ans.toString().trim();

@@ -10,7 +10,7 @@ public class BuildAMatrixWithConditions {
         List<List<Integer>> graph = new ArrayList<List<Integer>>();
 
         for(int i=0; i<=k; i++) {
-            graph.add(new ArrayList<Integer>());
+            graph.add(new ArrayList<>());
         }
 
         for(int[] row : rows) {
@@ -29,7 +29,7 @@ public class BuildAMatrixWithConditions {
             }
         }
 
-        Queue<Integer> queue = new LinkedList<Integer>();
+        Queue<Integer> queue = new LinkedList<>();
         int count = 0;
 
         for(int i=1; i<=k; i++) {

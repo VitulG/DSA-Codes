@@ -1,7 +1,7 @@
 public class LengthOfLastWord {
 
     public static int lastWordLength(String str) {
-        if(str.isEmpty() || str == null) {
+        if(str.isEmpty()) {
             return 0;
         }
 

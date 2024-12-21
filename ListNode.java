@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class ListNode {
     int val;
     ListNode next;
@@ -5,4 +7,5 @@ public class ListNode {
     public ListNode(int val) {
         this.val = val;
     }
+
 }

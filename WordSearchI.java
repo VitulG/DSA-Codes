@@ -5,7 +5,8 @@ public class WordSearchI {
             return true;
         }
         
-        if(row < 0 || row >= board.length || col < 0 || col >= board[0].length || board[row][col]  == '@' || board[row][col] != word.charAt(idx)) {
+        if(row < 0 || row >= board.length || col < 0 || col >= board[0].length ||
+                board[row][col]  == '@' || board[row][col] != word.charAt(idx)) {
             return false;
         }
 

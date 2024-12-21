@@ -35,6 +35,6 @@ public class MinimizedMaximumOfProductsDistributedToAnyStore {
     }
 
     public static void main(String[] args) {
-
+        System.out.println(minimizedMaximum(8, new int[]{10,14,2,4,6}));
     }
 }

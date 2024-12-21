@@ -32,8 +32,7 @@ public class InsertGreatestCommonDivisorsInLinkedList {
         head.next.next = new ListNode(10);
         head.next.next.next = new ListNode(3);
 
-        ListNode result = insertGreatestCommonDivisors(head);
-        ListNode curr = result;
+        ListNode curr = insertGreatestCommonDivisors(head);
 
         while(curr != null) {
             System.out.print(curr.val + " ");
