@@ -22,6 +22,11 @@ public class InventoryServiceImpl implements InventoryService {
 
     @Override
     public String addInventory(String category, String brand, int quantity) throws ItemNotFoundException, InventoryCreationException {
+
+        if(quantity < 0) {
+            throw new InventoryCreationException("Quantity can not be negative");
+        }
+
         Item item = itemRepository.findByBrandAndCategory(brand, category)
                 .orElseThrow(() -> new ItemNotFoundException("Item not found with this category: "+category +" and brand: "+brand));
 
