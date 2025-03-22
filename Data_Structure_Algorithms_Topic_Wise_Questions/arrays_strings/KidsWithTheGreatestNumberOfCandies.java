@@ -1,4 +1,4 @@
-package Leetcode_75.arrays_strings;
+package Data_Structure_Algorithms_Topic_Wise_Questions.arrays_strings;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package Leetcode_75.two_pointers;
+package Data_Structure_Algorithms_Topic_Wise_Questions.two_pointers;
 
 public class MoveZeroes {
 

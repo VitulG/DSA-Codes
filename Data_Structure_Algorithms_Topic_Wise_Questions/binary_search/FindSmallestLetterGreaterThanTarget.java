@@ -1,4 +1,4 @@
-package Leetcode_75.binary_search;
+package Data_Structure_Algorithms_Topic_Wise_Questions.binary_search;
 
 public class FindSmallestLetterGreaterThanTarget {
 
