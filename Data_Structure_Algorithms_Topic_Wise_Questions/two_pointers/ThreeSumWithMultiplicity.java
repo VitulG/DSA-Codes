@@ -1,8 +1,6 @@
 package Data_Structure_Algorithms_Topic_Wise_Questions.two_pointers;
 
 import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ThreeSumWithMultiplicity {
 
