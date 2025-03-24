@@ -25,6 +25,7 @@ public class NextPermutation {
             }
         }
 
+        // dip is negative that means there is not dip simply reverse the array to get the first smaller permutation
         if(dip == -1) {
             swapArray(nums, 0, nums.length-1);
         }else {
