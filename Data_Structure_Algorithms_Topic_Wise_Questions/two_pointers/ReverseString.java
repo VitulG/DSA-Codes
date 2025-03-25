@@ -16,6 +16,10 @@ public class ReverseString {
     }
 
     public static void main(String[] args) {
-
+        char[] chars = new char[]{'V','I','T','U','L'};
+        reverseString(chars);
+        for(char ch : chars) {
+            System.out.print(ch+" ");
+        }
     }
 }
