@@ -7,6 +7,7 @@ public class JumpGame {
 
         // max Reach rakho 0 pe aur check karo and max update karo ki uss index se kitna max ja sakte hai
         // agar kissi index pe maxReach kam reh jati hai to waha hum kabhi nahi pahuch paayenge..
+        // using greedily we can solve this one using dynamic programming
         for(int i=0; i<nums.length; i++) {
             if(maxReach < i) {
                 return false;
