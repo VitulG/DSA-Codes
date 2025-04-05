@@ -31,7 +31,7 @@ public class MinCostClimbingStairs {
         Arrays.fill(dp, -1);
         int minCostUsingFirstIndex = getMinCost(cost, 0, dp);
 
-        Arrays.fill(dp, -1);
+        //Arrays.fill(dp, -1);
         int minCostUsingSecondIndex = getMinCost(cost, 1, dp);
 
         return Math.min(minCostUsingFirstIndex, minCostUsingSecondIndex);
