@@ -4,10 +4,10 @@ public class SumOfAllSubsetXORTotals {
         if(idx == nums.length) {
             return currXor;
         }
-        int withXor = sumXorTotal(nums, idx+1, currXor^nums[idx]);
-        int withoutXor = sumXorTotal(nums, idx+1, currXor);
+        int takeXor = sumXorTotal(nums, idx+1, currXor^nums[idx]);
+        int skipXor = sumXorTotal(nums, idx+1, currXor);
 
-        return withXor + withoutXor;
+        return takeXor + skipXor;
     }
 
     public static int subsetXORSum(int[] nums) {
@@ -15,7 +15,7 @@ public class SumOfAllSubsetXORTotals {
     }
 
     public static void main(String[] args) {
-        System.out.println(subsetXORSum(new int[]{1,3}));
+        System.out.println(subsetXORSum(new int[]{1, 3, 5}));
     }
     
 }
