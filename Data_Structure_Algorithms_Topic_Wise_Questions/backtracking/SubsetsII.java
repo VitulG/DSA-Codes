@@ -2,7 +2,6 @@ package Data_Structure_Algorithms_Topic_Wise_Questions.backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 public class SubsetsII {
