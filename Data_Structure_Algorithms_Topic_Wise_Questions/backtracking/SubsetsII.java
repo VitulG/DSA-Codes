@@ -8,7 +8,6 @@ import java.util.List;
 public class SubsetsII {
 
     public static void generateUniqueSubsets(int[] nums, int idx, List<Integer> curr, List<List<Integer>> uniqueSubsets) {
-
         uniqueSubsets.add(new ArrayList<>(curr));
 
         for(int i=idx; i<nums.length; i++) {
