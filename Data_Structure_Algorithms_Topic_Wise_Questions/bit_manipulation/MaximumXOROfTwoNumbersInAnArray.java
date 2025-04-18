@@ -13,9 +13,6 @@ public class MaximumXOROfTwoNumbersInAnArray {
             }
         }
         return maxXor;
-
-
-
     }
 
     public static void main(String[] args) {
