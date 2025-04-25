@@ -6,6 +6,13 @@ import java.util.Map;
 public class SubarrayWithZeroSum {
 
     public static boolean findSum(int[] arr) {
+
+        // Approach 1. Brute force to generate all the subarray and check if there is subarray with 0 sum
+        // TC -> O(n^3) SC -> O(n)
+
+        // Approach 2. Using Hashing and Prefix sum to track sum which index has this sum if yes, we found a subarray else false;
+        // TC -> O(n) SC -> O(n)
+
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0, -1);
 
