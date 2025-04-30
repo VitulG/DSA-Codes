@@ -1,7 +1,6 @@
 package Data_Structure_Algorithms_Topic_Wise_Questions.heaps;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class InsertionInHeap {
