@@ -2,6 +2,18 @@ package Data_Structure_Algorithms_Topic_Wise_Questions.binary_search;
 
 public class SearchInsertPosition {
 
+    /*
+        Approach 1.
+            Linear Search just to iterate from left to right and get the element
+                if it exists, else we can return that index where that element should be present
+                    TC -> O(n), SC -> O(1)
+
+        Approach 2.
+            Binary Search we can discard that part in which that element must not be present
+                if that not exist, we can simply return that index, or we can store that index moves to the left part
+                    TC -> O(log n), SC -> O(1)
+     */
+
     public static int searchInsert(int[] nums, int target) {
         int lo = 0;
         int hi = nums.length-1;
