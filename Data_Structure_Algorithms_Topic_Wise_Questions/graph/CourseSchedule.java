@@ -7,6 +7,12 @@ import java.util.Queue;
 
 public class CourseSchedule {
 
+    /*
+        Approach is to use Kahn's algorithm over here we can select first which has not any incoming dependency
+            and process those courses and proceed further for the next courses
+                TC -> O(V+E), SC -> O(n)
+     */
+
     public static List<List<Integer>> getAdjacencyList(int courses, int[][] prerequisites) {
         List<List<Integer>> adjacencyList = new ArrayList<>();
 
