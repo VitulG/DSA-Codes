@@ -20,7 +20,7 @@ public class SearchInsertPosition {
                 hi = mid-1;
             }
         }
-        return insertPosition;
+        return insertPosition == -1 ? nums.length : insertPosition;;
     }
 
     public static void main(String[] args) {
