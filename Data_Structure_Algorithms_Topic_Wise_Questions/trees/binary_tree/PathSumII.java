@@ -7,6 +7,13 @@ import java.util.List;
 
 public class PathSumII {
 
+    /*
+        Approach: - We will use DFS over here we can take every node in our current list if it meets the target
+                        sum so we can add that list in to our ans list and so on and make sure we backtrack.
+                    TC -> O(n)
+                    SC -> O(h)
+     */
+
     public static void getTargetSumPaths(TreeNode node, int currSum, int targetSum, List<Integer> currentPath,
                                          List<List<Integer>> paths) {
         if(node == null) {
