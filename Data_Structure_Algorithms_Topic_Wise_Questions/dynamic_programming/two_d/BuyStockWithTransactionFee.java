@@ -8,8 +8,8 @@ public class BuyStockWithTransactionFee {
         Approach: - I have to choose a day in which I will buy a stock or not and sell a stock or not, so I have
                         choices. So over here we can apply recursive knapsack so we will definitely find the overlapping
                         subproblems so DP can be applied here.
-                    TC -> O(n^2)
-                    SC -> O(n^2)
+                    TC -> O(n)
+                    SC -> O(2n)
      */
 
     public static int getMaximumProfitWithTransactionFee(int[] arr, int idx, int fee, int status, int[][] dp) {
