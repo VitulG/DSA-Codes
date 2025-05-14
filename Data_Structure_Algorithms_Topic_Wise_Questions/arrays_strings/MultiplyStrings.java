@@ -55,11 +55,7 @@ public class MultiplyStrings {
             int digit = num2.charAt(i) - '0';
             String product = getMultiply(num1, digit);
 
-            for (int j = 0; j < level; j++) {
-                product += "0";
-            }
-
-            ans = addStringResult(ans, product);
+            ans = addStringResult(ans, getMultiply(num1, digit) + "0".repeat(Math.max(0, level)));
             level++;
         }
         return ans;
