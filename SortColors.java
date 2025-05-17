@@ -57,6 +57,8 @@ public class SortColors {
             System.out.print(i+" ");
         }
 
+        sortColorsUsingDutchNationalFlagAlgo(nums);
+        System.out.println(Arrays.toString(nums));
         
     }
     
