@@ -33,7 +33,7 @@ public class SortColors {
         int onePointer = 0;
         int twoPointer = nums.length-1;
 
-        while(onePointer < twoPointer) {
+        while(onePointer <= twoPointer) {
             if(nums[onePointer] == 0) {
                 swap(nums, zeroPointer, onePointer);
                 zeroPointer++;
