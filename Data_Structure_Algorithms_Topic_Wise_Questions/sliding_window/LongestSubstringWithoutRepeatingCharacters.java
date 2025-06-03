@@ -5,6 +5,19 @@ import java.util.Set;
 
 public class LongestSubstringWithoutRepeatingCharacters {
 
+    /*
+        Approach 1 Brute force, generate all the substrings and check if a substring is without repeating chars
+                        if yes, we just need to check the maximum substring and return their length.
+                    TC -> O(n^3)
+                    SC -> O(1)
+
+        Approach 2 Using Hashing and Sliding window just iterate from left to right and add right characters in a set
+                    and check the maximum length of a substring if the right character is there in a set, we need to shrink
+                    the left window and go to till string length and return the maximized substring length.
+                    TC -> O(n)
+                    SC -> O(n)
+     */
+
     public static int lengthOfLongestSubstring(String s) {
         if(s.isEmpty()) {
             return 0;
