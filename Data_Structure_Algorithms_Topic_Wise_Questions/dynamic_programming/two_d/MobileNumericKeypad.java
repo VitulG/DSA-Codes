@@ -5,6 +5,27 @@ import java.util.Arrays;
 
 public class MobileNumericKeypad {
 
+    /*
+        Approach:
+            - We treat each digit (0–9) on the keypad as a node in a graph.
+            - Each digit is connected to its valid neighbors: up, down, left, right, and itself (no diagonals).
+            - From each digit, we recursively explore all valid moves for (n-1) more steps to form a sequence of length n.
+            - Since subproblems repeat (same digit and remaining steps), we use DP (memoization) to avoid recomputation.
+
+            Optimization:
+                - This is a classic case of overlapping subproblems → convert naive backtracking to top-down DP with memoization.
+
+            Time and Space Complexity:
+
+                ➤ Backtracking (without memoization)
+                    Time  : O(5^n)    [worst case: each digit has ~5 neighbors]
+                    Space : O(n)      [recursive stack depth]
+
+                ➤ DP (with memoization)
+                    Time  : O(10 × n) [10 digits × n remaining steps]
+                    Space : O(10 × n) [DP table size]
+     */
+
     public static int generateUniqueSequences(int num, int[][] keyPad, int button, int[][] dp) {
         if(num == 0) {
             return 1;
