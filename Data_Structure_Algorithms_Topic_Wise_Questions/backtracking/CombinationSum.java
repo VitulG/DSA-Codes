@@ -31,6 +31,7 @@ public class CombinationSum {
         currentSum += arr[idx];
         current.add(arr[idx]);
         generateCombinationSum(arr, idx, currentSum, target, current, ans);
+
         current.remove(current.size()-1);
 
     }
